@@ -18,14 +18,14 @@ export const workExperience = [
     period: "Dec 2022 - Present",
     achievements: [
       "Built and optimized data pipelines across 8 countries 750+ retail stores, unifying eCommerce, POS, and inventory data into a centralized warehouse for analytics.",
-      "Led development of Layla AI, an LLM-powered chatbot for the Faces mobile app, boosting engagement (2.2×), conversion (2.6×), and revenue (+7%) by engineering a scalable backend and optimizing latency (2× faster).",
-      "Delivered Sellout Management System (SMS), consolidating multi-retailer sales data with an automated data warehouse and Looker dashboards, enabling <15min data freshness.",
+      "Led development of Layla AI, an LLM-powered chatbot for the Faces mobile app, boosting engagement, conversion, and revenue by engineering a scalable backend and optimizing latency.",
+      "Delivered Sellout Management System (SMS), consolidating multi-retailer sales data with an automated data warehouse and Looker dashboards.",
     ],
   },
   {
     company: "Central Digital",
     location: "Bangkok, Thailand",
-    position: "Machine Learning Engineer / Data Engineer",
+    position: "Machine Learning Engineer",
     period: "Jan 2020 - Dec 2022",
     achievements: [
       "Designed and deployed recommendation systems for 8M+ customers across six business units, boosting engagement and conversion rates.",
@@ -37,7 +37,7 @@ export const workExperience = [
   {
     company: "VISTEC",
     location: "Rayong, Thailand",
-    position: "Data Engineer (Research Assistant)",
+    position: "Research Assistant",
     period: "Sep 2018 - Dec 2019",
     achievements: [
       "Researched scalable data mining techniques for extreme classification problems.",
@@ -47,7 +47,7 @@ export const workExperience = [
   {
     company: "City University of Hong Kong",
     location: "Hong Kong",
-    position: "Data Engineer (Research Intern)",
+    position: "Research Intern",
     period: "Jun 2017 - Jul 2017",
     achievements: [
       "Co-authored a publication: A Scalable Framework for Stylometric Analysis of Multi-Author Documents (Springer, 2018).",

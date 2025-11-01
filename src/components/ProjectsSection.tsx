@@ -7,10 +7,11 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import { Github } from "lucide-react";
 import { GlassCard } from "./ui/glass-card";
 import MotionWrapper from "./MotionWrapper";
 import { motion } from "framer-motion";
+import { SiGithub } from "react-icons/si";
+
 
 export default function ProjectsSection() {
   return (
@@ -56,8 +57,8 @@ export default function ProjectsSection() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Github className="h-4 w-4 mr-2 group-hover/link:rotate-12 transition-transform duration-300" />
-                    View on GitHub 🔗
+                    <SiGithub className="h-4 w-4 mr-2 group-hover/link:rotate-12 transition-transform duration-300" />
+                    View on GitHub
                   </motion.a>
                 </CardFooter>
               </GlassCard>

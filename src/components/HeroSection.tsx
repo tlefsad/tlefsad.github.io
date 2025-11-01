@@ -1,5 +1,6 @@
 import { personalInfo } from "@/lib/data";
-import { Mail, Github, MapPin, Linkedin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
@@ -82,7 +83,7 @@ export default function HeroSection() {
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <Github className="h-4 w-4 mr-2" />
+                <SiGithub className="h-4 w-4 mr-2" />
                 GitHub
               </motion.a>
 
@@ -94,8 +95,8 @@ export default function HeroSection() {
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <Linkedin className="h-4 w-4 mr-2" />
-                🔗 LinkedIn
+                <SiLinkedin className="h-4 w-4 mr-2" />
+                LinkedIn
               </motion.a>
             </motion.div>
           </div>
