@@ -74,10 +74,31 @@ export const skills = {
     "TypeScript",
     "SQL",
   ],
+  backendDevelopment: ["FastAPI", "NodeJs"],
+  databaseAndStorage: ["Postgres", "Bigquery", "Redis"],
+  cloudAndDevOps: ["AWS", "Google Cloud"],
+  toolsAndServices: [
+    "Apache Airflow",
+    "DBT",
+  ],
 };
 
 export const projects = [
+  {
+    title: "Thai Analysis Plugin for Elasticsearch",
+    github: "https://github.com/tlefsad/elasticsearch-analysis-thaichub2",
+    description: [
+      "The Thaichub2 (thai-chub-chub) Analysis Plugin integrates the Thai word segmentation modules into Elasticsearch."
+    ],
+  },
 ];
 
 export const awards = [
+  {
+    name: "Google Cloud Professional Data Engineer Certification",
+    issuer: "Google Cloud",
+    date: "2025-01",
+    type: "Certification",
+    position: "Certified Professional Data Engineer",
+  },
 ];
