@@ -1,37 +1,24 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import HorizontalCard from "../components/HorizontalCard.astro";
+import Layout from "@/layouts/Layout.astro";
+import GlassHeader from "@/components/GlassHeader";
+import HeroSection from "@/components/HeroSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import SkillsSection from "@/components/SkillsSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import AwardsSection from "@/components/AwardsSection";
+import EducationSection from "@/components/EducationSection";
+import Footer from "@/components/Footer";
 ---
 
-
-<BaseLayout>
-
-    <div class="pb-12 mt-5">
-      <div class="text-xl py-1">Hey there 👋</div>
-      <div class="text-5xl font-bold">I'm Nattapol Vannaboot</div>
-      <div class="text-3xl py-3 font-bold">Data Engineer</div>
-      <div class="py-2">
-        <text class="text-lg">
-          This is my first website.
-          </text
-        >
-      </div>
-      <div class="mt-8">
-        <a class="btn" href="https://github.com/tlefsad" target="_blank"> My Github </a>
-      </div>
-    </div>
-
-    <div>
-      <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
-    </div>
-
-    <HorizontalCard
-      title="Demo Project 1"
-      img=""
-      desc="This is description."
-      url="#"
-      badge="NEW"
-    />
-    <div class="divider my-0"></div>
-
-</BaseLayout>
+<Layout>
+  <GlassHeader client:only="react" />
+  <main class="min-h-screen">
+    <HeroSection client:only="react" />
+    <ExperienceSection client:only="react" />
+    <SkillsSection client:only="react" />
+    <ProjectsSection client:only="react" />
+    <AwardsSection client:only="react" />
+    <EducationSection client:only="react" />
+  </main>
+  <Footer client:only="react" />
+</Layout>

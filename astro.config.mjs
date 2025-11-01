@@ -1,10 +1,14 @@
-import { defineConfig } from "astro/config";
-import mdx from "@astrojs/mdx";
-import sitemap from "@astrojs/sitemap";
-import tailwind from "@astrojs/tailwind";
+// @ts-check
+import { defineConfig } from 'astro/config';
+import tailwindcss from "@tailwindcss/vite";
+
+import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://tlefsad.github.io",
-  integrations: [mdx(), sitemap(), tailwind()],
+  vite: {
+      plugins: [tailwindcss()],
+  },
+
+  integrations: [react()]
 });
