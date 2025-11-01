@@ -62,7 +62,7 @@ export const education = [
     degree: "Bachelor of Engineering in Computer Engineering",
     period: "2014 - 2018",
     achievements: [
-      "Organized multiple events",
+      "",
     ],
   },
 ];

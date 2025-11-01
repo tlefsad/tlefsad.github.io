@@ -20,8 +20,7 @@ export default function ExperienceSection() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              💼
-            </motion.span>{" "}
+            </motion.span>{""}
             Work Experience
           </h2>
         </MotionWrapper>
@@ -29,9 +28,20 @@ export default function ExperienceSection() {
           {workExperience.map((job, index) => (
             <TimelineItem
               key={job.company + job.period}
-              title={`👨‍💻 ${job.position} | ${job.company}`}
-              subtitle={`🌍 ${job.location}`}
-              date={`📅 ${job.period}`}
+              title={`${job.position} | ${job.company}`}
+              subtitle={`${job.location}  ${(() => {
+                const countryMap: Record<string, string> = {
+                  "United Arab Emirates": "AE",
+                  "Thailand": "TH",
+                  "Hong Kong": "HK",
+                };
+                const country = job.location.split(', ').pop()!;
+                const code = countryMap[country];
+                return code
+                  ? code.replace(/./g, c => String.fromCodePoint(127397 + c.charCodeAt(0)))
+                  : "";
+              })()}`}
+              date={`${job.period}`}
               isLast={index === workExperience.length - 1}
               index={index}
             >

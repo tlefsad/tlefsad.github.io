@@ -14,7 +14,7 @@ export default function AwardsSection() {
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
           <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            🏆 Awards
+            Awards
           </h2>
         </MotionWrapper>
 
@@ -33,12 +33,12 @@ export default function AwardsSection() {
                   <h3 className="font-medium">{award.name}</h3>
                 </div>
                 <p className="text-xs text-muted-foreground mb-1 pl-8">
-                  🏢 {award.issuer}
+                  {award.issuer}
                 </p>
                 <div className="flex flex-col space-y-2 mt-auto">
                   <div className="flex justify-between items-center">
                     <span className="text-xs text-muted-foreground bg-background/50 px-2 py-1 rounded-md">
-                      📅 {award.date}
+                      {award.date}
                     </span>
                     <motion.span
                       className="text-xs px-2 py-1 bg-purple-500/10 rounded-full"
@@ -51,7 +51,7 @@ export default function AwardsSection() {
                     className="text-xs text-muted-foreground/80 bg-background/50 px-2 py-1 rounded-md w-fit"
                     whileHover={{ scale: 1.05 }}
                   >
-                    {award.type === "International" ? "🌎 " : "🎓 "}
+                    {award.type === "Certification" ? "🎓 " : ""}
                     {award.type}
                   </motion.span>
                 </div>

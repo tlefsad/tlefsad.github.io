@@ -17,7 +17,7 @@ export default function Footer() {
             whileHover={{ scale: 1.01 }}
           >
             &copy; {new Date().getFullYear()} {personalInfo.name}. All rights
-            reserved. ✨
+            reserved.
           </motion.p>
           <motion.p
             className="text-sm text-muted-foreground mt-2 md:mt-0 text-center md:text-left"
@@ -34,7 +34,7 @@ export default function Footer() {
               whileHover={{ rotate: 360 }}
               transition={{ duration: 0.5 }}
             >
-              💻
+              ⚛
             </motion.span>{" "}
             and{" "}
             <motion.span
@@ -48,7 +48,7 @@ export default function Footer() {
                 duration: 1.5,
               }}
             >
-              ❤️
+             🔥
             </motion.span>
           </motion.p>
         </motion.div>
